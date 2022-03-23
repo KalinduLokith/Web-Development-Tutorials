@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+
+</title>
+</head id="south">
+<body>
+<h1>HTML IMAGES </h1>
+<img src="bmwi8.png" alt="BMW i8 Coüpe" style="float:left;">
+<p>Six years after its market launch, the i8 Coupe (and the newer Roadster) are ending their product life cycles with the 2020 model year. Both all-wheel-drive models are powered by a combination of hybrid synchronous electric motor and BMW TwinPower Turbo technology, a 228-hp, 1.5-litre three-cylinder gas engine. The engine’s power is channeled to the rear wheels through a six-speed Steptronic automatic transmission,
+ while the electric motor propels the front wheels via a two-speed automatic gearbox.</p>
+ <hr><hr>
+ <h2>HTML IMAGE MAP</h2>
+
+ <img src="bmwi8.png" alt="BMW i8 coupe" usemap="#car">
+	<map name="car">
+	<area shape="circle" coords="55,41,44" href="https://www.bmwblog.com/2014/11/25/experience-bmw-i8-laser-headlights-night/">
+	<area shape="rect" coords="187,41,44" href="https://bmwi.bimmerpost.com/forums/showthread.php?t=910976">
+	<area shape="circle"coords="107,67,133,93" href="https://www.bmw.com/en/innovation/dr-hanafi-and-the-bmw-laserlight.html">
+	</map>
+ 
+ <hr><hr>
+ 
+ 
+ <p>The I8 was the BMW flagship hybrid supercar, and it looks like something from outer space. The exotic yet futuristic design established the car as the manufacturer’s first step towards a new generation of cars and combined luxury with the plug-in hybrid experience. Many enthusiasts were excited when the car debuted in 2013 at the 2013 Frankfurt Motorshow, but it gathered more than a few laughs by the company’s choice of a combustion engine, 
+ and it has led many people to incorrectly assume that this supercar would underperform.
+ <a href="https://www.motorbiscuit.com/wp-content/uploads/2020/05/BMW-I8-gullwing-doors.png"   target="_blank"  alt="BMW it Top Speed"> Click Me </a>
+ <hr>
+ <br>
+ <br>
+ <a href="south">TO TOP</a>
+
+</body>
+</html> 

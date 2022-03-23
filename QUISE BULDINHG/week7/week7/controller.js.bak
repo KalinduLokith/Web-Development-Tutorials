@@ -1,0 +1,174 @@
+// Javascript created by sandeepa Induwara Samaranayake
+
+// here we are creating element arrays using classes "question", "txt_number" and "btn_clear".
+let question_array = document.getElementsByClassName("question");
+let question_one_radio_array = document.getElementsByClassName("option1");
+let question_two_radio_array = document.getElementsByClassName("option2");
+let question_three_radio_array = document.getElementsByClassName("option3");
+let question_four_radio_array = document.getElementsByClassName("option4");
+let question_five_radio_array = document.getElementsByClassName("option5");
+let question_six_radio_array = document.getElementsByClassName("option6");
+let question_seven_radio_array = document.getElementsByClassName("option7");
+let question_eight_radio_array = document.getElementsByClassName("option8");
+let question_nine_radio_array = document.getElementsByClassName("option9");
+let question_ten_radio_array = document.getElementsByClassName("option10");
+//let btn_clear_array = document.getElementsByClassName("btn_clear");
+let feedback_array = document.getElementsByClassName("feedback");
+user_answers=[];
+correct_answers=[];
+let correct_count=0;
+let question= ["what is football?","what is ruguer"," What is cricket","what is badmintion?","what is football?","what is ruguer"," What is cricket","what is badmintion?"," What is cricket","what is badmintion?" ];
+let answers=[["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"],["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"],["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"],["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"],["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"],["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"],["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"],["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"],["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"],["1.kuma sangakkara","2.Mahela","3.messi","4.Ronaldo"]];
+/*// this function will return a random integer between min and max.
+function randomNumber(min, max)
+{
+    return Math.floor(Math.random() * (max + min));
+}
+
+// this function will return a random operator.
+function random_operator(operator_array)
+{
+    return operator_array[Math.floor(Math.random()*operator_array.length)];
+}
+
+// this will generate a random question and return it.
+function generate_random_math_question(i)
+{
+    let random_num1 = randomNumber(1,100);
+    let random_num2 = randomNumber(1,100);
+    operator_array = [" + "," - "," * "," / "];
+    let random_operator_value = random_operator(operator_array);
+    let random_question = random_num1 + random_operator_value + random_num2;
+    var answer = get_answer(random_num1,random_num2,random_operator_value);
+    correct_answers[i]=answer;
+//  console.log(correct_answers);
+    return random_question;
+}
+*/
+// this function will set random questions to all 10 span elements in the "question" class.
+function show_question()
+{
+    for(i=0; i<10; i++)
+    {
+        //var rand_question = generate_random_math_question(i);
+        question_array[i].innerHTML = question[i];
+    }
+}
+
+/* this function will get num1, num2, operator and return the correct answer.
+function get_answer(num1, num2, operator)
+{
+    if(operator==operator_array[0])
+    {
+        return num1+num2;
+    }
+    else if(operator==operator_array[1])
+    {
+        return num1-num2
+    }
+    else if(operator==operator_array[2])
+    {
+        return num1*num2;
+    }
+    else if(operator==operator_array[3])
+    {
+        return num1/num2;
+    }
+    else
+    {
+        alert("Something went wrong");
+    }
+}*/
+
+// this function will put entered values to an array and will set feedback that the system saved your answer.
+function submit_answer(index)
+{
+    console.log("submit_answer_activated");
+    user_answers[index] = txt_field_array[index].value;
+    console.log(user_answers);
+    feedback_array[index].innerHTML = "Your response "+user_answers[index]+" recorded. Good to goto next question.";
+}
+
+/* this function will clear the txt_fields according to the given index.
+function clear_field(index)
+{
+    txt_field_array[index].value="";
+}
+*/
+// this, on_load eventlistener will add onchange attributes to all elements in the class txt_number & add onclick attribute to all elements in the class btn_clear.
+// adding value "Clear" for all elements in the class btn_clear, set type as button for all elements in the btn_clear class and set type as number for all elements 
+// in the txt_number class.
+document.addEventListener("DOMContentLoaded", function() 
+{
+    console.log("onload activated.adding onchange attributes to all text field elements in the class txt_number and adding onclick attribute to all clear buttons in the class btn_clear.");
+    for(i=0; i<question.length; i++)
+    {
+       // console.log(txt_field_array[i]);
+       // txt_field_array[i].setAttribute("onchange","submit_answer("+(i)+")");
+        //btn_clear_array[i].setAttribute("onclick", "clear_field("+i+")");
+        //btn_clear_array[i].setAttribute("value","Clear");
+		//question_one_radio_array[i].setAttribute("type","radio")
+		for(let j=0;j<question_one_radio_array.length ;j++ )
+		{question_one_radio_array[i].setAttribute("value","1.");question_one_radio_array[i].setAttribute("type","radio")}
+        /*btn_clear_array[i].setAttribute("type","button");
+        txt_field_array[i].setAttribute("type","number");*/
+    }
+});
+
+/* this function will disable clear buttons when called.
+function disable_clear_btns()
+{
+    for(i=0; i<btn_clear_array.length; i++)
+    {
+        btn_clear_array[i].disabled=true;
+    }
+}*/
+
+// this function will check the answers whether they are correct or not.
+function check_answers()
+{
+   // document.getElementById("submit").disabled=true;
+    //disable_clear_btns();
+    for(i=0; i<correct_answers.length; i++)
+    {
+        if(user_answers[i] == correct_answers[i])
+        {
+            feedback_array[i].innerHTML="&checkmark; Your answer is Correct";
+            feedback_array[i].classList.add("correct");
+            correct_count++;
+        }
+        else
+        {
+            feedback_array[i].innerHTML="&cross; Your answer is incorrect. The correct answer is :"+correct_answers[i];
+            feedback_array[i].classList.add("incorrect");
+        }
+    }
+    result_sheet();
+}
+
+// this function will generate a resultsheet.
+function result_sheet()
+{
+    let result_holder = document.getElementById("result");
+    result_holder.innerHTML="your grade is :"+correct_count+"/10   | Converted into out of 100  :"+correct_count*10+"/100";
+    set_background_according_to_result();
+}
+
+
+function set_background_according_to_result()
+{
+    let body_element = document.getElementById("body_area");
+    if(correct_count<4)
+    {
+        body_element.classList.add("one_to_three");
+    }
+    else if(correct_count<8)
+    {
+        body_element.classList.add("four_to_seven");
+    }
+    else
+    {
+        body_element.classList.add("eight_to_ten");
+    }
+}
+

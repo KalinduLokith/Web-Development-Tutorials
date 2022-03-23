@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+<head>
+<title>JS VALIDATION</title>
+<style>
+*{background-color:yellow;}
+
+</style>
+
+<script>
+
+function ClickMe(Validation){
+let name=Validation.fname.value;
+
+if(name==""){
+   alert("You must fill this form!");
+   }
+   
+	else{
+	alert("Your name is="+name);
+	validation.fname.value="";}}
+	
+
+
+ 
+
+
+
+</script>
+</head>
+<body>
+<h3>Test html forms validation through JS </h3>
+<form name="value1">
+<label for="fname1">Enter your name </label>
+<input type="text" name="fname"size="20" id="fname">
+<input type="button" value="Click me!" onclick="ClickMe(this.form)";
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

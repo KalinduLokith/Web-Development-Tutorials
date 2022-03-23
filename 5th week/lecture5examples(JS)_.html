@@ -1,0 +1,235 @@
+<!Doctype htnl>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>JS TUTORIAL</title>
+<style>
+.correct{fcolor:green;
+font-weight:bold;}
+
+.incorrect{color:red;
+font-weighr:bold;}
+</style>
+</head>
+<body>
+<h2> A SAMPLE MATHS GAME </h2>
+
+<p> 
+	<strong>Question 1</strong>
+	<span id="Question 1"></span>
+	<span id="Answer 1"></span>
+	<span id="feedback1"></span>
+</p>
+<script>
+let question=prompt("8*9=  ");
+document.getElementById("Question 1").innerHTML="8*9 =  ";
+document.getElementById("Answer 1").innerHTML=question;
+
+if(question==72){
+document.getElementById("feedback1").classList.add("correct") 
+document.getElementById("feedback1").innerHTML="&checkmark;Correct Answer";
+			}
+else{
+document.getElementById("feedback1").classList.add("incorrect") 
+document.getElementById("feedback1").innerHTML="&cross;Answer is 72"; 
+	}
+</script>
+
+<p> <strong>Question 2</strong>
+	<span id="Question 2"></span>
+	<span id="Answer 2"></span>
+	<span id="feedback2"></span>
+</p>
+<script>
+let question2 =prompt("9*6");
+document.getElementById("Question 2").innerHTML="9*6 =  ";
+document.getElementById("Answer 2").innerHTML=question2;
+
+if(question2==54){
+document.getElementById("Question 2").classList.add("correct") 
+document.getElementById("feedback2").innerHTML="&checkmark;Correct Answer";
+}
+else{
+document.getElementById("feedback2").classList.add("incorrect") 
+document.getElementById("feedback2").innerHTML="&cross;Answer is 54"; 
+}
+
+</script>
+
+<p> <strong>Question 3</strong>
+	<span id="Question 3"></span>
+	<span id="Answer 3"></span>
+	<span id="feedback3"></span>
+</p>
+<script>
+let question3=prompt("8+8=");
+document.getElementById("Question 3").innerHTML="8+8="; 
+document.getElementById("Answer 3").innerHTML=question3; 
+
+if(question3==16){
+document.getElementById("feedback3").classList.add("correct")
+document.getElementById("feedback3").innerHTML="&checkmark;Correct Answer";
+}
+else{
+document.getElementById("feedback3").classList.add("incorrect") 
+document.getElementById("feedback3").innerHTML="&cross;Answer is 16";
+}
+</script>
+
+<p> <strong>Question 4</strong>
+	<span id="Question 4"></span>
+	<span id="Answer 4"></span>
+	<span id="feedback 4"></span>
+</p>
+<script>
+
+let question4=prompt("9+9")
+document.getElementById("Question 4").innerHTML="9+9 ="; 
+document.getElementById("Answer 4").innerHTML=question4;
+
+
+if(question4==18){
+document.getElementById("feedback 4").classList.add("correct")
+document.getElementById("feedback 4").innerHTML="&checkmark;Correct Answer";}
+else{
+document.getElementById("feedback 4").classList.add("correct")
+document.getElementById("feedback 4").innerHTML="&cross;Answer is 18";
+}
+
+
+
+</script>
+
+<p> <strong>Question 5</strong>
+	<span id="Question 5"></span>
+	<span id="Answer 5"></span>
+	<span id="feedback 5"></span>
+</p>
+<script>
+let question5= prompt("10*10");
+document.getElementById("Question 5").innerHTML="10*10=";
+document.getElemenById("Answer 5").innerHTML=question5;
+
+if(question5==100){
+document.getElemenById("feedback 5").classList.add("correct" )
+document.getElementById("feedback 5").innerHTML="&checkmark;Correct Answer";
+}
+else{
+
+document.getElementById("feedback 5").classList.add("incorrect")
+document.getElementById("feedback 5").innerHTML="&cross;Answer is 100";
+}
+</script>
+<p> <strong> Question 6</strong>
+	<span id="Question 6"></span>
+	<span id="Answer 6"></span>
+	<span id="feedback 6"></span>
+</p>
+<script>
+
+let question6=prompt("20-10=");
+document.getElementById("Question 6").innerHTML="20-10=";
+document.getElementById("Answer 6").innerHTML=question6;
+if(question6==10){
+document.getElemenById("feedback 6").classList.add("correct" )
+document.getElementById("feedback 6").innerHTML="&checkmark;Correct Answer";
+}
+else{
+document.getElementById("feedback 6").classList.add("incorrect")
+document.getElementById("feedback 6").innerHTML="&cross;Answer is 10";
+}
+
+</script>
+
+<p> <strong>Question 7</strong>
+	<span id="Question 7"></span>
+	<span id="Answer 7"></span>
+	<span id="feedback 7"></span>
+</p>
+<script>
+let question7=prompt("120*2=");
+document.getElementById("Question 7").innerHTML="120*2=";
+document.getElementById("Answer 7").innerHTML=question7; 
+
+if(question7==220){
+document.getElementById("feedback 7").classList.add("correct")
+document.getElementById("feedback 7").innerHTML=" &checkmark;Correct Answer";
+}
+else{
+document.getElementById("feedback 7").classList.add("incorrect")
+document.getElementById("feedback 7").innerHTML="&cross;Answer is 10";
+}
+
+</script>
+
+<p> <strong>Question 8</strong>
+	<span id="Question 8"></span>
+	<span id="Answer 8"></span>
+	<span id="feedback 8"></span>
+</p>
+<script>
+let question8=prompt("45*2=");
+document.getElementById("Question 8").innerHTML="45*2=";
+document.getElementById("Answer 8").innerHTML=question8;
+
+if(question8==90){
+document.getElementById("feedback 8").classList.add("correct")
+document.getElementById("feedback 8").innrHTML=" &checkmark;Correct Answer";
+}
+else{
+document.getElementById("feedback 8").classList.add("correct")
+document.getElementById("feedback 8").innerHTML="&cross;Answer is 10";
+
+}
+
+</script>
+ 
+<p> <strong>Question 9</strong>
+	<span id="Question 9"></span>
+	<span id="Answer 9"></span>
+	<span id="feedback 9"></span>
+</p>
+<script>
+let question9=prompt("90*2");
+document.getElementById("Question 9").innerHTML="90*2=";
+document.getElementById("Answer 9").innerHTML=question9;
+if(question9==180){
+document.getElementById("feedback 9").classList.add("correct")
+document.getElemntById("feedback 9").innerHTML="&checkmark;Correct Answer";
+}
+else{
+
+document.getElementById("feedback 9").calssList.add("incorrect")
+document.getELemntById("feedback 9").innerHTML="&cross;Answer is 10";
+}
+</script>
+<p> <strong>Question 10</strong>
+	<span id="Question 10"></span>
+	<span id="Answer 10"></span>
+	<span id="feedback 10"></span>
+</p>
+<script>
+
+let question10=prompt("250*2=");
+document.getElementById("Question 10").innerHTML="250*2=";
+document.getElementById("Answer 10").innerHTML=question10;
+
+if(question10==500){
+document.getElementById("feedback 10").classList.add("correct");
+document.getElementById("feedback 10").innerHTML="&checkmark;Correct Answer";
+}
+else{
+document.getElementById("feedback 10").classList.add("incorrect")
+document.getELementById("feedback 10").innerHTML="&cross;Answer is 10" ;
+
+}
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

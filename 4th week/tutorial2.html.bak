@@ -1,0 +1,53 @@
+<!Doctype html>
+<html>
+<head>
+
+<title>Tutorial 2</title>
+<style>
+table,tr,td,th{border:1px solid blue;}
+.asc{background-color:MediumSeaGreen;}	
+.ls{background-color:Yellow;}		
+.sf{background-color:Teal;}	
+.pas{background-color:DodgerBlue;}
+.ps{background-color:Chartreuse;}
+.cls{background-color:Olive;}
+</style>
+</head>
+<body style="background-color:green;">
+<h1>Tutorial 2 - Pool Schedule </h1>
+<h2>Lokith Srinayaka</h2>
+<table class="southern">
+<tr>
+<td colspan="6">
+<p>Prices:</p>
+	<ul>
+	<li>Free-Infants(0-3)</li>
+	<li>&#163;3-Child(4-12)</li>
+	<li>&#163;4-Youth(13-17)</li>
+	<li>&#163;5-Adults</li>
+	</ul>
+	</tr>
+
+	
+<tr><th>         </th><th>7:00-8:00</th><th>8:00-9:00</th><th>9:00-11:00</th>	<th>11:00-5:00</th><th>5:00-7:00</th></tr>
+<tr><th>Monday   </th> <td class="sf">SwimFit </td><td  class="ls" colspan="2">LaneSwim</td><td class="ps" rowspan="7">PublicSwim </td><td class="asc">Adult Swim Club</td></tr>
+<tr><th>Tuesday  </th><td class="ls"colspan="2">LaneSwim </td><td class="pas" >Parents and Tots </td><td class="asc">Adult Swim Club</td></tr>
+<tr><th>Wednesday </th><td class="sf" >SwimFit  </td><td class="ls" colspan="2" >LaneSwim </td><td class="asc">Adult Swim Club</td></tr>
+<tr><th>Thursday</th><td class="ls" colspan="2" >LaneSwim </td><td class="pas">Parents and Tots</td><td  class="cls" rowspan="5">Closed</td></tr>
+<tr><th>Friday </th><td class="sf" >SwimFit </td><td class="ls" colspan="2">LaneSwim </td></tr>
+<tr><th>Saturday  </th><td class="ps" colspan="3" >PublicSwim  </td></tr>
+<tr><th>Sunday </th><td  class="ps" colspan="3">PublicSwim  </td></tr>
+
+
+
+
+
+
+
+
+
+
+
+</table>
+</body>
+</html>

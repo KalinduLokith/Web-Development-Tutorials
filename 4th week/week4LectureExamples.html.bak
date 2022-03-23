@@ -1,0 +1,257 @@
+<!Doctype html>
+<html>
+<head>
+<title> MY HTML FORMS PAGE</title>
+<style>
+*{background-color:yellow;}
+fieldset{background-color:lightgreen;}
+input[type=text]{
+ border:2px red groove;
+}
+
+input[type=password]{
+ border:2px red dotted;}
+ 
+ input[type=number]{border:2px yellow groove;}
+ 
+ label{color:blue;}
+ input{border:2px yellow  groove; }
+</style>
+</head>
+<body>
+<h4>HTML FORMS LECTURE 4</h4>
+
+<fieldset>
+
+<form action="mailto:kalindu.20210332@iit.ac,lk  method="post">
+<fieldset>
+<legend>Required details</legend>
+<br><br> <br> <br>
+
+<!... TEXT INPUT...>
+<label for="text"> Enter your name: </label>
+<input type="text" name="text" id="name" size="20"maxlength ="8" min="2"  value="Name" required autofocus>
+
+<br><br> <br> <br>
+
+<!..IMPLICIT LABEL..>
+<label>
+Name:
+<input type="text" name="text"id="text">
+</label>
+
+
+<br><br> <br> <br>
+
+<!..EXPLICIT LABELS...>
+<label for="text">Name:</label>
+<input type="text" name="text" name="text">
+
+<br><br> <br> <br>
+
+<!...TextAREA...>
+<label for="text" >Home Address: </label>
+<textarea name="text"name="text"id="text"  rows="6" cols="6"> </textarea>
+
+<br><br> <br> <br>
+
+<!...PASSWORD...>
+<label for="password" >Enter the password </label>
+<input type="password" name="password"id="password" size="20" placeholder="Password">
+
+<br><br> <br> <br>
+
+<!...RADIO BUTTONS..>
+<label for="male">Male</label>
+<input type="radio"name="gender"id="name"  value="M" checked>
+
+<label for ="female">Female</label>
+<input type="radio"name="gender"id="female"  value="F"  >
+</fieldset>
+<br><br> <br> <br>
+<fieldset>
+<legend>FILL THIS</legend>
+<!...CHECKBOXSES...>
+<label for="coffee">Coffee</label>
+<input type="checkbox" name="coffee" id="coffee" value="c">
+<label for="tea">Tea</label>
+<input type="checkbox"name="tea"id="name" value="t">
+ <label for="tea">soft-drink</label>
+<input type="checkbox"name="tea"id="name" value="t">
+ <label for="tea">black-coffee</label>
+<input type="checkbox"name="tea"id="name" value="t">
+ 
+<br><br> <br> <br>
+ 
+
+<!...POPUP LIST...>
+<label for="cities">Select the most beautiful city </label>
+<select nbame="cities"id="cities">
+	<option>Nuwara-Eliya</option>
+	<option>Bogawanthalawa</option>
+	<option> Haputhale</option>
+	<option>Kandy</option>
+	</select> 
+	
+<br><br> <br> <br>
+	
+
+<!...SCROLLING LIST...>
+
+<label for="meals"> What is the delicious meal you ever eat in SL</label>
+<select name="meals"id="meals">
+<option  value="Milk-Rice">Milk-rice</option>
+<option  value="Roti">Roti</option>
+<option value="Rice and curry">Rice and curry</option>
+<option value="kottu">Kottu</option>
+</select>
+
+<br><br> <br> <br>
+
+<!...DATA LIST...>
+<label for="travel"> How do travell ariund SL</label>
+<input name="travel" list="vechile"id="travel">
+<datalist id="vechile">
+	<option value="Tuk-Tuk">
+	<option value="Moto-cycle">
+	<option value="Car">
+	<option value="Train">
+	<option value="Bus">
+</datalist>
+
+<br><br> <br> <br>
+
+<!...Email input Field...>
+<label for="email">Email</label>
+<input type="email" size="20"  name="email" id="email" placeholder="E-mail">
+
+
+<br><br> <br> <br>
+
+<!...	URL INPUT FIELD...>
+<label for="URL">Enter your personal website</label>
+<input type="url"name="url"id="url" size="20">
+
+<br><br> <br> <br>
+
+<!...TEL INPUT FIELD...>
+<label for="tel">Enter your Phone number </label>
+<input type="tel" id="tel" size="10"> 
+
+<br><br> <br> <br>
+
+<!NUMBER INPUT FIELD...>
+<label for="number">How much days you spend in SL </label>
+<input type="number" name="number"id="number" placeholder="enter the number " size="20"value="days" maxlength="20"min="2">
+
+
+<br><br> <br> <br>
+
+<!SEARCH INPUT FIELD...>
+<label for="search"> Keyword-Search</label>
+<input type="search|"name="search"  id ="search">
+
+
+<br><br> <br> <br>
+
+<!...DATE PICKER ...>
+<label for="birthday">Select your birthday</label>
+<input type="date"name="date"id="birthday" value="1999-01-01"max="2029-01-01" min="1998-01-01"> 
+
+<br><br> <br> <br>
+
+<!...DATETIME LOCAL...>
+
+<label for="birthday"> Select your bithday and birthtime</label>
+<input type=" date-local"name="birthday"id="birthday" value="1999-01-01T00:00" required >
+
+<br><br> <br> <br>
+
+<!...WEEK...>
+<label for="birthday"> Select your birthweek </label>
+<input type="week" id="birthday"name="birthday" placeholder="1999-W01" required >
+
+<br><br> <br> <br>
+
+<!...RANGE INPUT FIELD...>
+<label for="rating">How much you rate SL culcture</label>
+<input type="range" name="range" id="range" >
+
+
+ 
+ <br><br> <br> <br>
+
+<!...COLOR INPUT FIELD(COLOR-PICKER)...>
+<label for="color">What is your prefered color </label>
+<input type="color" name="color" id ="color" >
+
+<br><br> <br> <br>
+
+<!...HIDDEN FIELD IN HTML FORM...>
+<label for="hidden"> This is a hidden field</label>
+<input type="hidden"name="hidden"id="hidden" value="2020">
+ 
+
+<!...BUTTONS...>
+<!...FIRST WAY TO CREAT BUTTONS...>
+<input type="submit"value="submitdata">
+<input type="reset" value="resetdata"> 
+
+
+<!...SECOND WAY TO CREAT BUTTONS...>
+<input type="button" name="button1"value="I'm a button" >
+<button name="button2"> I'm a button</button> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+
+</fieldset>
+</fieldset>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

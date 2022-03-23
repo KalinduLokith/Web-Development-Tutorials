@@ -1,0 +1,30 @@
+.correct
+{
+  color: green;
+  font-weight:bold;
+}
+.incorrect
+{
+  color: rgb(247, 168, 168);
+  font-weight:bold;
+}
+body
+{
+  margin-left: 5%;
+}
+.one_to_three
+{
+  background-color: rgb(221, 63, 63);
+}
+.four_to_seven
+{
+  background-color: gold;
+}
+.eight_to_ten
+{
+  background-color: chartreuse;
+}
+label
+{
+  padding-block: 40px;
+}
